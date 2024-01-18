@@ -1,0 +1,60 @@
+html,
+body,
+#root,
+canvas {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+@font-face {
+  font-family: druk;
+  src: url(../public/Druk.ttf);
+}
+
+.container {
+  height: 100vh;
+}
+
+.wrapper {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  z-index: 1;
+  width: 45%;
+}
+.title {
+  height: 100%;
+}
+
+.content {
+  margin-left: 30px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content h2 {
+  color: white;
+  font-size: 30px;
+  font-family: druk;
+}
+
+.content h1 {
+  color: #40e0d0;
+  font-size: 45px;
+  font-family: druk;
+}
+
+.button button {
+  font-family: druk;
+  background-color: transparent;
+  padding: 20px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+}

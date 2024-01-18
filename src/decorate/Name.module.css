@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.title {
+  font-family: druk;
+  font-size: 80px;
+  line-height: 0;
+  color: transparent;
+  padding: 10px 0;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: orange;
+  letter-spacing: 0.5px;
+  animation: move-rtl 2000ms linear infinite;
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translatey(0);
+  }
+
+  100% {
+    transform: translatey(-100%);
+  }
+}
